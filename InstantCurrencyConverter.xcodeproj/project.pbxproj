@@ -11,6 +11,11 @@
 		54C4978129C458260005E115 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C4978029C458260005E115 /* ContentView.swift */; };
 		54C4978329C458270005E115 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54C4978229C458270005E115 /* Assets.xcassets */; };
 		54C4978629C458270005E115 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54C4978529C458270005E115 /* Preview Assets.xcassets */; };
+		54C4978D29C45A9C0005E115 /* ScanData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C4978C29C45A9C0005E115 /* ScanData.swift */; };
+		54C4978F29C45CCF0005E115 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C4978E29C45CCF0005E115 /* ScannerView.swift */; };
+		54C4979129C45F190005E115 /* TextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C4979029C45F190005E115 /* TextRecognizer.swift */; };
+		54EE658E29C8677E00D1A8E2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 54EE658D29C8677E00D1A8E2 /* Alamofire */; };
+		54EE659029C8679700D1A8E2 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EE658F29C8679700D1A8E2 /* Currency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		54C4978029C458260005E115 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		54C4978229C458270005E115 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54C4978529C458270005E115 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		54C4978C29C45A9C0005E115 /* ScanData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanData.swift; sourceTree = "<group>"; };
+		54C4978E29C45CCF0005E115 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		54C4979029C45F190005E115 /* TextRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognizer.swift; sourceTree = "<group>"; };
+		54C4979229C4A4010005E115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		54EE658F29C8679700D1A8E2 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54EE658E29C8677E00D1A8E2 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +62,13 @@
 		54C4977D29C458260005E115 /* InstantCurrencyConverter */ = {
 			isa = PBXGroup;
 			children = (
+				54C4979229C4A4010005E115 /* Info.plist */,
 				54C4977E29C458260005E115 /* InstantCurrencyConverterApp.swift */,
+				54C4978E29C45CCF0005E115 /* ScannerView.swift */,
+				54EE658F29C8679700D1A8E2 /* Currency.swift */,
+				54C4979029C45F190005E115 /* TextRecognizer.swift */,
 				54C4978029C458260005E115 /* ContentView.swift */,
+				54C4978C29C45A9C0005E115 /* ScanData.swift */,
 				54C4978229C458270005E115 /* Assets.xcassets */,
 				54C4978429C458270005E115 /* Preview Content */,
 			);
@@ -83,6 +99,9 @@
 			dependencies = (
 			);
 			name = InstantCurrencyConverter;
+			packageProductDependencies = (
+				54EE658D29C8677E00D1A8E2 /* Alamofire */,
+			);
 			productName = InstantCurrencyConverter;
 			productReference = 54C4977B29C458260005E115 /* InstantCurrencyConverter.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +130,9 @@
 				Base,
 			);
 			mainGroup = 54C4977229C458260005E115;
+			packageReferences = (
+				54EE658C29C8677E00D1A8E2 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 54C4977C29C458260005E115 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +159,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54EE659029C8679700D1A8E2 /* Currency.swift in Sources */,
 				54C4978129C458260005E115 /* ContentView.swift in Sources */,
+				54C4978F29C45CCF0005E115 /* ScannerView.swift in Sources */,
+				54C4979129C45F190005E115 /* TextRecognizer.swift in Sources */,
 				54C4977F29C458260005E115 /* InstantCurrencyConverterApp.swift in Sources */,
+				54C4978D29C45A9C0005E115 /* ScanData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +221,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +275,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -267,8 +293,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"InstantCurrencyConverter/Preview Content\"";
+				DEVELOPMENT_TEAM = 2S9C5BNK8V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InstantCurrencyConverter/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) requires permssion to scan files";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -295,8 +324,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"InstantCurrencyConverter/Preview Content\"";
+				DEVELOPMENT_TEAM = 2S9C5BNK8V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InstantCurrencyConverter/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) requires permssion to scan files";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -337,6 +369,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		54EE658C29C8677E00D1A8E2 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		54EE658D29C8677E00D1A8E2 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54EE658C29C8677E00D1A8E2 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 54C4977329C458260005E115 /* Project object */;
 }
